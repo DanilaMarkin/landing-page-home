@@ -1,0 +1,430 @@
+/* start link Google fonts */
+@font-face {
+    font-family: 'Nunito Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap");
+}
+/* end link Google fonts */
+
+/* start reset CSS */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+*{
+    font-family: 'Nunito Sans', sans-serif;    
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+}
+img, svg, video{
+    max-width: 100%;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+/* end reset CSS */
+
+/* start settings all page */
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+/* end settings all page */
+
+/* start nav */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+/* start nav__logo */
+.nav__logo{
+    font-size: 17.246px;
+    font-weight: 700;
+    letter-spacing: 0.172px;
+}
+.nav__logo p{
+    color: black;
+}
+.nav__logo span{
+    color: #A07855;
+}
+/* end nav__logo */
+/* start nav__page */
+.nav__page{
+    display: flex;
+    gap: 25px;
+}
+.nav__page a{
+    color: #6B707E;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.16px;
+}
+.nav__page__heart{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 6px;
+}
+/* end nav__page */
+/* start nav__btn */
+.nav__btn{
+    display: flex;
+    gap: 12px;
+}
+.nav__btn button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.16px;
+    border-radius: 5px;
+    padding: 13px 19px;
+}
+.nav__btn__download{
+    gap: 8px;
+    color: white;
+    border: none;
+    background: linear-gradient(268deg, #0057FF 1.64%, #259BFF 97.95%);
+    box-shadow: 0px 2px 22px 0px rgba(0, 87, 255, 0.43);
+}
+.nav__btn__card{
+    gap: 10px;
+    border: 1px solid var(--buy, #19B37D);
+    background: var(--buy, linear-gradient(87deg, #19B37D 13.35%, #188A7B 86.33%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* end nav__btn */
+/* end nav */
+
+/* start header */
+header{
+    display: flex;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), linear-gradient(90deg, #E9DEFA 0%, #FBFCDB 100%);
+    padding: 28px 0 61px 0;
+}
+.header__blocks{
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+}
+.header__text__link{
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.header__text__link__main{
+    color: #343A40;
+    opacity: 0.6;
+}
+.header__text__link__last{
+    color: black;
+}
+.header__text__main-text{
+    padding-top: 45px;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #343A40;
+}
+.header__text__main-text h1{
+    width: 562px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%; 
+}
+.header__text__main-text p{
+    width: 484px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 155%;
+}
+.header__text__author{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #343A40;
+    font-size: 14px;
+    line-height: 150%;
+}
+.header__text__author img{
+    border-radius: 50%;
+}
+.header__text__author__info__name{
+    opacity: 0.8;
+    font-weight: 700;
+}
+.header__text__author__info__new{
+    opacity: 0.6;
+    font-weight: 400;
+}
+/* end header */
+/* start download block */
+.download{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+.download__info{
+    padding-bottom: 33px;
+    width: 432px;
+    color: #343A40;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.download__info__btn-info p{
+    color: #343A40;
+    opacity: 0.6;
+    font-size: 14px;
+    font-weight: 400;
+}
+.download__info__btn-info{
+    padding-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.icon{
+    padding: 0 3.5px 0 7px;
+}
+.download__info__btn-info__windows{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 15px 23px;
+    border-radius: 5px;
+    background: linear-gradient(268deg, #0057FF 1.64%, #259BFF 97.95%);
+}
+.download__info__btn-info__windows img{
+    width: 18px;
+}
+/* start slider */
+.download__slider__slideshow{
+    border-radius: 7px;
+    position: relative;
+    margin: auto;
+}
+.download__slider__slideshow img{
+    border-radius: 7px;
+    width: 454px;
+    height: 284.49px;
+}
+.mySlides{
+    display: none;
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    margin: 0 7px;
+    background-color: #EBEBEC;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.download__slider__slideshow_center{
+    margin-top: 13.51px;
+    text-align: center;
+}
+.active{
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(211deg, #999595 16.04%, #585858 85.53%);
+}
+/* end slider */
+/* end download block */
+
+/* start video */
+.video__text{
+    width: 971px;
+}
+.video__main-text{
+    margin-bottom: 28px;
+    color: #343A40;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 135%;
+}
+.video__start-icon{
+    content: url(../img/start-icon.svg);
+    margin-right: 8px;
+}
+.video__info{
+    margin: 40px 0 30px 0;
+    color:#343A40;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.video__faq{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+.video__faq p{
+    color:#343A40;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* start popup */
+.video__container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+.video__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.video__popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 35px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #fff;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+}
+.video-frame {
+    pointer-events: none;
+    border-radius: 7px;
+}
+/* end popup */
+/* end video */
+
+/* start faq */
+.faq{
+    padding: 0  98px 66px 42px;
+}
+.faq__blocks{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.faq h1{
+    color:  #343A40;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 135%;
+    margin-bottom: 50px;
+}
+.accordion {
+    color: #343A40;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 130%;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px 18px 18px 0;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+.accordion:after {
+    content: '\002B';
+    color: #343A40;
+    width: 12px;
+    height: 12px;
+    font-weight: 400;
+    float: right;
+    margin-right: 10px;
+}
+.active__accordion:after {
+    content: "\2212";
+}
+.panel {
+    box-shadow:inset 0px -50px 70px 0px #fff;
+    padding: 0 18px 0 0;
+    max-height: 85px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel p{
+    color:#000;
+    position:relative;
+    z-index:-1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+/* end faq */
+/* start footer  */
+.footer__blocks{
+    margin-top: 53px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer__blocks__logo h4{
+     color: #343A40;
+    font-size: 17.246px;
+    font-weight: 700;
+    letter-spacing: 0.172px;
+}
+.footer__blocks__logo span{
+    color: #A07855;
+}
+.footer__blocks p{
+    color: #8D8F91;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.footer__blocks p:first-child {
+    padding-bottom: 12px;
+}
+.footer__block__center{
+    text-align: center;
+    padding: 48px 0 30px 0;
+    color: #343A40;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    opacity: 0.45;
+}
+/* end footer  */
